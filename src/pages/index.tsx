@@ -577,43 +577,43 @@ function HomePageFooter() {
   )
 }
 
-function BetaBanner() {
-  const [isBetaInfoOpen, setIsBetaInfoOpen] = useState(true)
-  return (
-    <div className={`flex flex-row ${isBetaInfoOpen ? 'flex' : 'hidden'} bg-ground-color-light`}>
-      <div className="flex items-center justify-center text-center my-2" style={{ width: '95%' }}>
-        <div className="text-primary text-sm font-normal">
-          <span>In case you missed it, Raydium V3 Beta is live - check it out </span>
-          <a href="https://beta.raydium.io" rel="noreferrer" target="_blank" className="text-link-color">
-            here
-          </a>
-          <span>! More info in the </span>
-          <a
-            href="https://x.com/RaydiumProtocol/status/1772563377501724786"
-            rel="noreferrer"
-            target="_blank"
-            className="text-link-color"
-          >
-            Tweet
-          </a>
-          .
-        </div>
-      </div>
-      <div
-        className="flex items-center justify-center cursor-pointer hover:bg-ground-color"
-        style={{ width: '5%' }}
-        onClick={() => setIsBetaInfoOpen(false)}
-      >
-        ×
-      </div>
-    </div>
-  )
-}
+// function BetaBanner() {
+//   const [isBetaInfoOpen, setIsBetaInfoOpen] = useState(true)
+//   return (
+//     <div className={`flex flex-row ${isBetaInfoOpen ? 'flex' : 'hidden'} bg-ground-color-light`}>
+//       <div className="flex items-center justify-center text-center my-2" style={{ width: '95%' }}>
+//         <div className="text-primary text-sm font-normal">
+//           <span>In case you missed it, Raydium V3 Beta is live - check it out </span>
+//           <a href="https://beta.raydium.io" rel="noreferrer" target="_blank" className="text-link-color">
+//             here
+//           </a>
+//           <span>! More info in the </span>
+//           <a
+//             href="https://x.com/RaydiumProtocol/status/1772563377501724786"
+//             rel="noreferrer"
+//             target="_blank"
+//             className="text-link-color"
+//           >
+//             Tweet
+//           </a>
+//           .
+//         </div>
+//       </div>
+//       <div
+//         className="flex items-center justify-center cursor-pointer hover:bg-ground-color"
+//         style={{ width: '5%' }}
+//         onClick={() => setIsBetaInfoOpen(false)}
+//       >
+//         ×
+//       </div>
+//     </div>
+//   )
+// }
 
 export default function HomePage() {
   return (
     <HomePageContainer>
-      <BetaBanner />
+      {/* <BetaBanner /> */}
       <HomePageNavbar />
       <HomePageSection0 />
       <HomePageSection1 />
