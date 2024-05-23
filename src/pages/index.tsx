@@ -81,7 +81,8 @@ function HomePageSection0() {
           Light-speed <b>swaps</b>. Next-level <b>liquidity</b>. {isMobile ? <br /> : ''} Friction-less <b>yield</b>.
         </div>
         {/* two button */}
-        <Row className="gap-8 mobile:gap-4 mb-16 mobile:mb-6 grid grid-cols-2-fr">
+        {/* <Row className="gap-8 mobile:gap-4 mb-16 mobile:mb-6 grid grid-cols-2-fr"> */}
+        <Row className="gap-8 mobile:gap-4 mb-16 mobile:mb-6 grid grid-cols-1-fr">
           <Button
             className="home-rainbow-button-bg text-white mobile:text-xs px-5 mobile:px-4"
             onClick={() => {
@@ -94,7 +95,7 @@ function HomePageSection0() {
             </Row>
           </Button>
 
-          <Button
+          {/* <Button
             className="frosted-glass-teal text-white mobile:text-xs px-5 mobile:px-4 forsted-blur"
             onClick={() => {
               linkTo('https://raydium.gitbook.io/raydium/')
@@ -104,7 +105,7 @@ function HomePageSection0() {
               <div>Read docs</div>
               <Icon iconSrc="/icons/gitbook.svg" size="sm" />
             </Row>
-          </Button>
+          </Button> */}
         </Row>
         {/* two panels */}
         <Row className="gap-6 mobile:gap-3 mb-9 grid grid-cols-2-fr">
@@ -616,9 +617,9 @@ export default function HomePage() {
       {/* <BetaBanner /> */}
       <HomePageNavbar />
       <HomePageSection0 />
-      <HomePageSection1 />
-      <HomePageSection2 />
-      <HomePageFooter />
+      {/* <HomePageSection1 /> */}
+      {/* <HomePageSection2 /> */}
+      {/* <HomePageFooter /> */}
     </HomePageContainer>
   )
 }

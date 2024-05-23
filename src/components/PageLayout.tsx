@@ -125,7 +125,7 @@ export default function PageLayout(props: {
       ) : (
         <>
           <Navbar className="grid-area-a" />
-          <SideMenu className="flex-container grid-area-b mobile:hidden" />
+          {/* <SideMenu className="flex-container grid-area-b mobile:hidden" /> */}
         </>
       )}
       <main
@@ -651,12 +651,12 @@ function SideMenu({ className, onClickCloseBtn }: { className?: string; onClickC
             />
           </Row>
         )}
-        <Col className="grid grid-rows-[2fr,1fr,auto] flex-1 overflow-hidden">
+        {/* <Col className="grid grid-rows-[2fr,1fr,auto] flex-1 overflow-hidden">
           <div className="shrink overflow-y-auto min-h-[120px] py-4 space-y-1 mobile:py-0 px-2 mr-2 mobile:ml-2 mb-2">
             <LinkItem icon="/icons/entry-icon-swap.svg" href="/swap" isCurrentRoutePath={pathname === '/swap'}>
               Swap
             </LinkItem>
-            {/* <LinkItem
+            <LinkItem
               icon="/icons/entry-icon-liquidity.svg"
               href="/liquidity/add"
               isCurrentRoutePath={pathname === '/liquidity/add'}
@@ -681,7 +681,7 @@ function SideMenu({ className, onClickCloseBtn }: { className?: string; onClickC
             </LinkItem>
             <LinkItem icon="/icons/entry-icon-acceleraytor.svg" href="/acceleraytor/list">
               AcceleRaytor
-            </LinkItem> */}
+            </LinkItem>
           </div>
 
           <Col className="overflow-scroll no-native-scrollbar">
@@ -720,7 +720,7 @@ function SideMenu({ className, onClickCloseBtn }: { className?: string; onClickC
               </div>
             </Tooltip.Panel>
           </Tooltip>
-        </Col>
+        </Col> */}
       </Col>
     </>
   )
