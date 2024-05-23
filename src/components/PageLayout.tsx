@@ -149,7 +149,7 @@ export default function PageLayout(props: {
             props.contentClassName
           )}
         >
-          {props.children}
+          {props.children?.[1]}
         </div>
       </main>
     </div>
