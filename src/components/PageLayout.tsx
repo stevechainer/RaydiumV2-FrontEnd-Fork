@@ -139,8 +139,8 @@ export default function PageLayout(props: {
         {props.contentBanner}
         {/* do not check ata currently
         <MigrateBubble /> */}
-        <VersionTooOldDialog />
-        <DisclaimerDialog />
+        {/* <VersionTooOldDialog /> */}
+        {/* <DisclaimerDialog /> */}
         <div
           className={twMerge(
             `grow h-0 isolate flex-container p-12 ${
@@ -479,7 +479,7 @@ function Navbar({
       </Link>
 
       <Row className="gap-6 items-center mobile:hidden">
-        <MessageBoardWidget />
+        {/* <MessageBoardWidget /> */}
         {/* <TxVersionWidget /> */}
         <WalletWidget />
       </Row>
