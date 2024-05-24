@@ -81,7 +81,8 @@ function HomePageSection0() {
           Light-speed <b>swaps</b>. Next-level <b>liquidity</b>. {isMobile ? <br /> : ''} Friction-less <b>yield</b>.
         </div>
         {/* two button */}
-        <Row className="gap-8 mobile:gap-4 mb-16 mobile:mb-6 grid grid-cols-2-fr">
+        {/* <Row className="gap-8 mobile:gap-4 mb-16 mobile:mb-6 grid grid-cols-2-fr"> */}
+        <Row className="gap-8 mobile:gap-4 mb-16 mobile:mb-6 grid grid-cols-1-fr">
           <Button
             className="home-rainbow-button-bg text-white mobile:text-xs px-5 mobile:px-4"
             onClick={() => {
@@ -94,7 +95,7 @@ function HomePageSection0() {
             </Row>
           </Button>
 
-          <Button
+          {/* <Button
             className="frosted-glass-teal text-white mobile:text-xs px-5 mobile:px-4 forsted-blur"
             onClick={() => {
               linkTo('https://raydium.gitbook.io/raydium/')
@@ -104,7 +105,7 @@ function HomePageSection0() {
               <div>Read docs</div>
               <Icon iconSrc="/icons/gitbook.svg" size="sm" />
             </Row>
-          </Button>
+          </Button> */}
         </Row>
         {/* two panels */}
         <Row className="gap-6 mobile:gap-3 mb-9 grid grid-cols-2-fr">
@@ -577,48 +578,48 @@ function HomePageFooter() {
   )
 }
 
-function BetaBanner() {
-  const [isBetaInfoOpen, setIsBetaInfoOpen] = useState(true)
-  return (
-    <div className={`flex flex-row ${isBetaInfoOpen ? 'flex' : 'hidden'} bg-ground-color-light`}>
-      <div className="flex items-center justify-center text-center my-2" style={{ width: '95%' }}>
-        <div className="text-primary text-sm font-normal">
-          <span>In case you missed it, Raydium V3 Beta is live - check it out </span>
-          <a href="https://beta.raydium.io" rel="noreferrer" target="_blank" className="text-link-color">
-            here
-          </a>
-          <span>! More info in the </span>
-          <a
-            href="https://x.com/RaydiumProtocol/status/1772563377501724786"
-            rel="noreferrer"
-            target="_blank"
-            className="text-link-color"
-          >
-            Tweet
-          </a>
-          .
-        </div>
-      </div>
-      <div
-        className="flex items-center justify-center cursor-pointer hover:bg-ground-color"
-        style={{ width: '5%' }}
-        onClick={() => setIsBetaInfoOpen(false)}
-      >
-        ×
-      </div>
-    </div>
-  )
-}
+// function BetaBanner() {
+//   const [isBetaInfoOpen, setIsBetaInfoOpen] = useState(true)
+//   return (
+//     <div className={`flex flex-row ${isBetaInfoOpen ? 'flex' : 'hidden'} bg-ground-color-light`}>
+//       <div className="flex items-center justify-center text-center my-2" style={{ width: '95%' }}>
+//         <div className="text-primary text-sm font-normal">
+//           <span>In case you missed it, Raydium V3 Beta is live - check it out </span>
+//           <a href="https://beta.raydium.io" rel="noreferrer" target="_blank" className="text-link-color">
+//             here
+//           </a>
+//           <span>! More info in the </span>
+//           <a
+//             href="https://x.com/RaydiumProtocol/status/1772563377501724786"
+//             rel="noreferrer"
+//             target="_blank"
+//             className="text-link-color"
+//           >
+//             Tweet
+//           </a>
+//           .
+//         </div>
+//       </div>
+//       <div
+//         className="flex items-center justify-center cursor-pointer hover:bg-ground-color"
+//         style={{ width: '5%' }}
+//         onClick={() => setIsBetaInfoOpen(false)}
+//       >
+//         ×
+//       </div>
+//     </div>
+//   )
+// }
 
 export default function HomePage() {
   return (
     <HomePageContainer>
-      <BetaBanner />
+      {/* <BetaBanner /> */}
       <HomePageNavbar />
       <HomePageSection0 />
-      <HomePageSection1 />
-      <HomePageSection2 />
-      <HomePageFooter />
+      {/* <HomePageSection1 /> */}
+      {/* <HomePageSection2 /> */}
+      {/* <HomePageFooter /> */}
     </HomePageContainer>
   )
 }

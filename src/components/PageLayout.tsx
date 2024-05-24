@@ -110,7 +110,7 @@ export default function PageLayout(props: {
       className={`w-full mobile:w-full h-full mobile:h-full`}
     >
       <div className="grid-area-d">
-        <BetaBanner className="w-full" />
+        {/* <BetaBanner className="w-full" /> */}
         <RPCPerformanceBanner className="w-full" />
         <NewConcentratedPoolBanner className="w-full" />
         <NoneATABanner className="w-full" />
@@ -125,7 +125,7 @@ export default function PageLayout(props: {
       ) : (
         <>
           <Navbar className="grid-area-a" />
-          <SideMenu className="flex-container grid-area-b mobile:hidden" />
+          {/* <SideMenu className="flex-container grid-area-b mobile:hidden" /> */}
         </>
       )}
       <main
@@ -139,8 +139,8 @@ export default function PageLayout(props: {
         {props.contentBanner}
         {/* do not check ata currently
         <MigrateBubble /> */}
-        <VersionTooOldDialog />
-        <DisclaimerDialog />
+        {/* <VersionTooOldDialog /> */}
+        {/* <DisclaimerDialog /> */}
         <div
           className={twMerge(
             `grow h-0 isolate flex-container p-12 ${
@@ -149,7 +149,7 @@ export default function PageLayout(props: {
             props.contentClassName
           )}
         >
-          {props.children}
+          {props.children?.[1]}
         </div>
       </main>
     </div>
@@ -224,40 +224,40 @@ function NoneATABanner({ className }: { className?: string }) {
   )
 }
 
-function BetaBanner({ className }: { className?: string }) {
-  const [isBetaInfoOpen, setIsBetaInfoOpen] = useState(true)
-  return (
-    <div className={className}>
-      <div className={`flex flex-row ${isBetaInfoOpen ? 'flex' : 'hidden'} bg-ground-color-light`}>
-        <div className="flex items-center justify-center text-center my-2" style={{ width: '95%' }}>
-          <div className="text-primary text-sm font-normal">
-            <span>In case you missed it, Raydium V3 Beta is live - check it out </span>
-            <a href="https://beta.raydium.io" rel="noreferrer" target="_blank" className="text-link-color">
-              here
-            </a>
-            <span>! More info in the </span>
-            <a
-              href="https://x.com/RaydiumProtocol/status/1772563377501724786"
-              rel="noreferrer"
-              target="_blank"
-              className="text-link-color"
-            >
-              Tweet
-            </a>
-            .
-          </div>
-        </div>
-        <div
-          className="flex items-center justify-center cursor-pointer hover:bg-ground-color"
-          style={{ width: '5%' }}
-          onClick={() => setIsBetaInfoOpen(false)}
-        >
-          ×
-        </div>
-      </div>
-    </div>
-  )
-}
+// function BetaBanner({ className }: { className?: string }) {
+//   const [isBetaInfoOpen, setIsBetaInfoOpen] = useState(true)
+//   return (
+//     <div className={className}>
+//       <div className={`flex flex-row ${isBetaInfoOpen ? 'flex' : 'hidden'} bg-ground-color-light`}>
+//         <div className="flex items-center justify-center text-center my-2" style={{ width: '95%' }}>
+//           <div className="text-primary text-sm font-normal">
+//             <span>In case you missed it, Raydium V3 Beta is live - check it out </span>
+//             <a href="https://beta.raydium.io" rel="noreferrer" target="_blank" className="text-link-color">
+//               here
+//             </a>
+//             <span>! More info in the </span>
+//             <a
+//               href="https://x.com/RaydiumProtocol/status/1772563377501724786"
+//               rel="noreferrer"
+//               target="_blank"
+//               className="text-link-color"
+//             >
+//               Tweet
+//             </a>
+//             .
+//           </div>
+//         </div>
+//         <div
+//           className="flex items-center justify-center cursor-pointer hover:bg-ground-color"
+//           style={{ width: '5%' }}
+//           onClick={() => setIsBetaInfoOpen(false)}
+//         >
+//           ×
+//         </div>
+//       </div>
+//     </div>
+//   )
+// }
 
 function VersionTooOldDialog() {
   const versionRefreshData = useAppVersion((s) => s.versionFresh)
@@ -479,8 +479,8 @@ function Navbar({
       </Link>
 
       <Row className="gap-6 items-center mobile:hidden">
-        <MessageBoardWidget />
-        <TxVersionWidget />
+        {/* <MessageBoardWidget /> */}
+        {/* <TxVersionWidget /> */}
         <WalletWidget />
       </Row>
     </Row>
@@ -514,7 +514,7 @@ function Navbar({
       )}
 
       <Row className="gap-3 items-center justify-self-end">
-        <TxVersionWidget />
+        {/* <TxVersionWidget /> */}
         <WalletWidget />
       </Row>
     </Grid>
@@ -651,7 +651,7 @@ function SideMenu({ className, onClickCloseBtn }: { className?: string; onClickC
             />
           </Row>
         )}
-        <Col className="grid grid-rows-[2fr,1fr,auto] flex-1 overflow-hidden">
+        {/* <Col className="grid grid-rows-[2fr,1fr,auto] flex-1 overflow-hidden">
           <div className="shrink overflow-y-auto min-h-[120px] py-4 space-y-1 mobile:py-0 px-2 mr-2 mobile:ml-2 mb-2">
             <LinkItem icon="/icons/entry-icon-swap.svg" href="/swap" isCurrentRoutePath={pathname === '/swap'}>
               Swap
@@ -720,7 +720,7 @@ function SideMenu({ className, onClickCloseBtn }: { className?: string; onClickC
               </div>
             </Tooltip.Panel>
           </Tooltip>
-        </Col>
+        </Col> */}
       </Col>
     </>
   )
