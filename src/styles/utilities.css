@@ -118,3 +118,6 @@
 .swap-input-box-grid.mobile .area-c {
   justify-self: end;
 }
+.bg-cyberpunk-card-bg {
+  background-image: linear-gradient(140.14deg, rgba(0, 182, 191, 0.15) 0%, rgba(27, 22, 89, 0.1) 86.61%), linear-gradient(321.82deg, #2d0a41 0%, #500f76 100%);
+}

@@ -169,9 +169,9 @@ exports.glassStyle = plugin(({ addUtilities }) => {
       }
     },
     '.frosted-glass-teal': {
-      '--text-color': 'hsl(183, 67%, 54%)',
+      '--text-color': 'hsl(0deg 0% 100%)',
       '--border-color': 'hsl(165, 87%, 65%)',
-      '--bg-board-color': 'hsl(183, 67%, 54%, 0.2)',
+      '--bg-board-color': 'hsl(264.65deg 56.83% 55.49%)',
       '--bg-board-color-2': 'hsl(183, 67%, 54%, 0)'
     },
     '.frosted-glass-teal.ghost': {
