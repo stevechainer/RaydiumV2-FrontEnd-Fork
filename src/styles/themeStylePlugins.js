@@ -100,26 +100,26 @@ exports.cyberpunkBgLight = plugin(({ addUtilities }) => {
         }
       },
       '.cyberpunk-bg-acceleraytor-prject-step-1, .cyberpunk-bg-acceleraytor-prject-step-2, .cyberpunk-bg-acceleraytor-prject-step-3':
-        {
-          position: 'relative',
-          contain: 'paint',
-          '&::before': {
-            content: "''",
-            position: 'absolute',
-            top: '130%',
-            left: '90%',
-            width: '346px',
-            height: '346px',
-            transform: 'translate(-50%, -50%)',
-            pointerEvents: 'none',
-            background:
-              'linear-gradient(221.5deg, #DA2EEF 16.15%, rgba(218, 46, 239, 0) 84.46%), radial-gradient(53.22% 53.22% at 93.67% 75.22%, rgba(218, 46, 239, 0.5) 0%, rgba(57, 208, 216, 0.5) 55.21%, rgba(84, 44, 238, 0.5) 100%), radial-gradient(63.44% 63.44% at 42.78% 105%, #39D0D8 0%, #542CEE 100%)',
-            backgroundBlendMode: 'lighten, color-burn, normal',
-            willChange: 'transform',
-            filter: 'blur(133px)',
-            opacity: '.25'
-          }
-        },
+      {
+        position: 'relative',
+        contain: 'paint',
+        '&::before': {
+          content: "''",
+          position: 'absolute',
+          top: '130%',
+          left: '90%',
+          width: '346px',
+          height: '346px',
+          transform: 'translate(-50%, -50%)',
+          pointerEvents: 'none',
+          background:
+            'linear-gradient(221.5deg, #DA2EEF 16.15%, rgba(218, 46, 239, 0) 84.46%), radial-gradient(53.22% 53.22% at 93.67% 75.22%, rgba(218, 46, 239, 0.5) 0%, rgba(57, 208, 216, 0.5) 55.21%, rgba(84, 44, 238, 0.5) 100%), radial-gradient(63.44% 63.44% at 42.78% 105%, #39D0D8 0%, #542CEE 100%)',
+          backgroundBlendMode: 'lighten, color-burn, normal',
+          willChange: 'transform',
+          filter: 'blur(133px)',
+          opacity: '.25'
+        }
+      },
       '.cyberpunk-bg-acceleraytor-prject-step-2': {
         '&::before': {
           with: '282px',
@@ -142,32 +142,32 @@ exports.cyberpunkBgLight = plugin(({ addUtilities }) => {
 exports.glassStyle = plugin(({ addUtilities }) => {
   addUtilities({
     '.frosted-glass-smoke , .frosted-glass-lightsmoke , .frosted-glass-teal , .frosted-glass-skygray , .frosted-glass':
-      {
-        '--text-color': 'hsl(0, 0%, 100%)',
-        '--border-color': 'hsl(0, 0%, 100%)',
-        '--bg-board-color': 'hsl(0, 0%, 100%, 0.12)',
-        '--bg-board-color-2': 'hsl(0, 0%, 100%, 0)',
+    {
+      '--text-color': 'hsl(0, 0%, 100%)',
+      '--border-color': 'hsl(0, 0%, 100%)',
+      '--bg-board-color': 'hsl(0, 0%, 100%, 0.12)',
+      '--bg-board-color-2': 'hsl(0, 0%, 100%, 0)',
 
-        position: 'relative',
+      position: 'relative',
 
-        color: 'var(--text-color)',
-        background:
-          'linear-gradient(162deg, var(--bg-board-color) 28.7%, var(--bg-board-color-2, var(--bg-board-color)))',
-        isolation: 'isolate',
-        '&::before': {
-          content: "''",
-          position: 'absolute',
-          inset: 0,
-          zIndex: '-1',
-          opacity: '0.7',
-          background: 'transparent',
-          borderRadius: 'inherit',
-          boxShadow: 'inset 0 0 0 var(--border-line-width, 1.5px) var(--border-color)',
-          maskImage: `radial-gradient(at -31% -58%, hsl(0, 0%, 0%, 0.5) 34%, transparent 60%),
+      color: 'var(--text-color)',
+      background:
+        'linear-gradient(162deg, var(--bg-board-color) 28.7%, var(--bg-board-color-2, var(--bg-board-color)))',
+      isolation: 'isolate',
+      '&::before': {
+        content: "''",
+        position: 'absolute',
+        inset: 0,
+        zIndex: '-1',
+        opacity: '0.7',
+        background: 'transparent',
+        borderRadius: 'inherit',
+        boxShadow: 'inset 0 0 0 var(--border-line-width, 1.5px) var(--border-color)',
+        maskImage: `radial-gradient(at -31% -58%, hsl(0, 0%, 0%, 0.5) 34%, transparent 60%),
         linear-gradient(to left, hsl(0, 0%, 0%, 0.2) 0%, transparent 13%),
         linear-gradient(hsl(0deg 0% 0% / 5%), hsl(0deg 0% 0% / 5%))`
-        }
-      },
+      }
+    },
     '.frosted-glass-teal': {
       '--text-color': 'hsl(183, 67%, 54%)',
       '--border-color': 'hsl(165, 87%, 65%)',

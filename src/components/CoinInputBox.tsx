@@ -296,7 +296,7 @@ export default function CoinInputBox({
   return (
     <Row
       className={twMerge(
-        `relative flex-col bg-[#141041] cursor-text rounded-xl py-3 px-6 mobile:px-4 ${
+        `relative flex-col bg-[#28093b] border border-[rgb(0,0,0)] cursor-text rounded-xl py-3 px-6 mobile:px-4 ${
           disabled && !noDisableStyle ? 'pointer-events-none-entirely cursor-default opacity-50' : ''
         }`,
         className

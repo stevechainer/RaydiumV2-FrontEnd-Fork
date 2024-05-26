@@ -130,7 +130,7 @@ export default function PageLayout(props: {
       )}
       <main
         // always occupy scrollbar space
-        className="flex flex-col PageLayoutContent relative grid-area-c bg-gradient-to-b from-[#0c0927] to-[#110d36] rounded-tl-3xl mobile:rounded-none"
+        className="flex flex-col PageLayoutContent relative grid-area-c bg-gradient-to-b from-[#32085b] to-[#451065] rounded-tl-3xl mobile:rounded-none"
         style={{
           overflowX: 'hidden',
           overflowY: 'scroll'
